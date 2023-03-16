@@ -13,6 +13,7 @@ import { SelectedTaskComponent } from './components/selected-task/selected-task.
 import { HomeComponent } from './pages/home/home.component';
 import { TaskComponent } from './pages/task/task.component';
 import { HistoryComponent } from './pages/history/history.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HistoryComponent } from './pages/history/history.component';
     HistoryComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

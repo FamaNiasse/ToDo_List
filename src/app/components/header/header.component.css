@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background:#040722;
+    color:white;
+    height: 70px;
+    width: 390px;
+    border: 1px solid white;
+}
+
+P{
+    margin-left: 26px;
+}
