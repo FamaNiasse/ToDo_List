@@ -1,0 +1,17 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.butt{
+    background: #1D2038;
+    padding: 20px;
+    border-radius: 100%;
+}
+
+img{
+    background: #1D2038;
+}
+
