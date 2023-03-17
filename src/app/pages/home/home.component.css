@@ -1,6 +1,12 @@
-body{
+.home{
+    width: 371px;
     background: #040722;
     color: white;
     height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
 
+p{
+    padding-left: 26px;
 }

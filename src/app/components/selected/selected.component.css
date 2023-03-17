@@ -1,0 +1,23 @@
+input{
+    height: 182px;
+    width: 338px;
+    background: #1D2038 ;
+    border: none;
+}
+
+input::placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    padding-left: 26px;
+}
