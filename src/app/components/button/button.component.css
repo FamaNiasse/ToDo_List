@@ -6,3 +6,13 @@ button {
     background: #64A7D9;
     border: none;
 }
+
+main{
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
