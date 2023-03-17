@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Image, IMAGE } from 'src/app/mocks/category.mock';
 
 @Component({
   selector: 'app-category',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class CategoryComponent {
 
+  image: Image[] = IMAGE ;
 }
