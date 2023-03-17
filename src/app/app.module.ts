@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -12,6 +11,7 @@ import { UrgentComponent } from './components/urgent/urgent.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SelectedPageComponent } from './pages/selected-page/selected-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { AppRoutingModule } from './app-routing.module';
     SelectedComponent,
     UrgentComponent,
     HomeComponent,
-    HistoryComponent
+    HistoryComponent,
+    SelectedPageComponent
   ],
   imports: [
     BrowserModule,

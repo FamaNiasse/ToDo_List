@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { SelectedComponent } from './pages/selected/selected.component';
 import { HistoryComponent } from './pages/history/history.component';
+import { SelectedPageComponent } from './pages/selected-page/selected-page.component';
 
 
 const routes: Routes = [
@@ -13,7 +13,7 @@ const routes: Routes = [
 
   {
     path:"selected",
-    component: SelectedComponent
+    component: SelectedPageComponent
   },
 
   {
