@@ -11,7 +11,6 @@ import { SelectedComponent } from './components/selected/selected.component';
 import { UrgentComponent } from './components/urgent/urgent.component';
 import { SelectedTaskComponent } from './components/selected-task/selected-task.component';
 import { HomeComponent } from './pages/home/home.component';
-import { TaskComponent } from './pages/task/task.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -27,7 +26,6 @@ import { AppRoutingModule } from './app-routing.module';
     UrgentComponent,
     SelectedTaskComponent,
     HomeComponent,
-    TaskComponent,
     HistoryComponent
   ],
   imports: [
