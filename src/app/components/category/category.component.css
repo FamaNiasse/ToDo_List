@@ -1,0 +1,17 @@
+.category{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border: none;
+    background: rgba(255, 255, 255, 0.10);
+
+}
+
