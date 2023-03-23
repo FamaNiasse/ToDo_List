@@ -11,9 +11,13 @@ button{
     height: 48px;
     border-radius: 100%;
     border: none;
-    background: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.1);
     margin: 28px 0;
 
+}
+
+.category button.selected{
+    background: #F3D24F;
 }
 
 p{

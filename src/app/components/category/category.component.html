@@ -1,11 +1,15 @@
 <body>
     <p>Sélectionnez votre catégorie :</p>
-
-<main class="category">
-<div *ngFor="let images of image">
-<button><img [src]="images.picture" alt=""></button>
-</div>
-
-</main>
-
-</body>
+  
+    <main class="category">
+      <div *ngFor="let images of image; let i = index">
+        <button 
+          [class.selected]="i === selectedCategory" 
+          (click)="selectCategory(i)">
+          <img [src]="images.picture" alt="">
+        </button>
+      </div>
+    </main>
+  
+  </body>
+  

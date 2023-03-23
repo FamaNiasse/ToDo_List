@@ -7,6 +7,11 @@ import { Image, IMAGE } from 'src/app/mocks/category.mock';
   styleUrls: ['./category.component.css']
 })
 export class CategoryComponent {
-
   image: Image[] = IMAGE ;
+  selectedCategory: number = -1;
+
+  selectCategory(index: number) {
+    this.selectedCategory = index;
+  }
 }
+

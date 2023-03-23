@@ -1,7 +1,14 @@
 <main>
 
-<div class="butt"> <img src="assets\img\butt-list-24.png" alt=""> </div>
-<div class="butt"> <img src="assets\img\butt-add-24.png" alt=""> </div>
-<div class="butt"> <img src="assets\img\butt-history-24.png" alt=""> </div> 
+    <div class="butt1" [ngClass]="{'home-page': isHomePage()}">
+        <img class="butt1-img" src="assets\img\butt-list-24.png" alt="">
+    </div>
+    <div class="butt2" [ngClass]="{'selected-page': isSelectedPage()}">
+        <img class="butt2-img" src="assets\img\butt-add-24.png" alt="">
+    </div>
+    <div class="butt3" [ngClass]="{'history-page': isHistoryPage()}">
+        <img class="butt3-img" src="assets\img\butt-history-24.png" alt="">
+    </div> 
+    
 
 </main>
