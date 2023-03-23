@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SelectedPageComponent } from './pages/selected-page/selected-page.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,10 @@ import { SelectedPageComponent } from './pages/selected-page/selected-page.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

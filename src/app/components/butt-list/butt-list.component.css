@@ -5,7 +5,34 @@ main{
     gap: 25px;
 }
 
-.butt{
+.home-page {
+    background-color: #88E7A1 !important;
+    }
+
+.home-page .butt1-img {
+    background-color: #88E7A1 !important;
+
+}
+
+.selected-page {
+    background-color: #F3D24F !important;
+    }
+
+.selected-page .butt2-img {
+    background-color: #F3D24F !important;
+}
+
+.history-page {
+    background-color: #E475F1 !important;
+    }
+
+.history-page .butt3-img {
+    background-color: #E475F1 !important;
+}
+
+
+
+.butt1, .butt2, .butt3 {
     background: #1D2038;
     padding: 20px;
     border-radius: 100%;

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-button',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./button.component.css']
 })
 export class ButtonComponent {
+
+  @Input() text: string = '';
+
+  constructor(private router: Router) {}
+
+  goToSelectedPage() {
+    this.router.navigate(['/selected']);
+    
+  }
 
 }

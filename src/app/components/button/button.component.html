@@ -3,8 +3,10 @@
     <p>Aucune tâche pour le moment 🙌</p>
 
 
-<button type="submit">
-    Créer une tâche
+<button (click)="goToSelectedPage()"  type="submit">
+    {{ text }}
 </button>
 
 </main>
+
+<!-- *ngIf="category && inputText" [disabled]="!(category && inputText)" -->

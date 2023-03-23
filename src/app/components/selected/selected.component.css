@@ -4,6 +4,7 @@ input{
     background: #1D2038 ;
     border: none;
     margin: 28px 0;
+    color: white;
 }
 
 input::placeholder {
@@ -17,6 +18,7 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 p{

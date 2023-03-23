@@ -1,15 +1,10 @@
-
 <div>
-    <p>Quelle tâche avez vous à effectuer ?</p>
-
-</div> 
-
+  <p>Quelle tâche avez-vous à effectuer ?</p>
+</div>
 <section>
-
-
-    <div class="task">
-        <input type="text" placeholder="Exemple : Faire les courses">
-    </div>
-    
-
+  <div class="task">
+    <input type="text" placeholder="Exemple : Faire les courses" [(ngModel)]="taskInputValue" (ngModelChange)="onTaskInputChange()">
+  </div>
 </section>
+
+  
