@@ -1,7 +1,57 @@
-<body class="home">
+<main class="flex column" *ngIf="todoListFiltrated.length > 0 ; else otherContent">
 
-    <p>Aucune tâche pour le moment 🙌</p>
-    
-<app-button [text]="buttonText"></app-button>
+    <section class="urgent" *ngIf="onlyUrgentList.length > 0">
+       
 
-</body>
+
+        <div class="flex entete">
+            <p class="titre"><img class="icone-urgent" src="assets/icons/urgent-icon.png" alt="icon-urgent"> Tâches urgentes</p>
+        </div>
+
+        <ul *ngFor="let todo of onlyUrgentList">
+            <li>
+                <button type="button" (click)="todoDone(todo.id)"> </button>
+                <a routerLink="/add/{{todo.id}}" >
+                    <span> {{todo.category}} </span>
+                    <span> {{todo.content}}</span>
+                </a>
+            </li>
+        </ul>
+
+
+
+    </section>
+
+    <br>
+
+    <!-- Section des todos non urgentes -->
+    <section class="non-urgent" *ngIf="notUrgentList.length > 0">
+        <div class="flex entete">
+            <p class="titre">
+                <img class="icone-urgent" src="assets/icons/flower-icon.png" alt="icon-flower">Tâches non urgentes</p>
+        </div>
+
+        <ul *ngFor="let todo of notUrgentList">
+
+            <li>
+                <button type="button" (click)="todoDone(todo.id)"> </button>
+                <a routerLink="/add/{{todo.id}}" >
+                    <span> {{todo.category}} </span>
+                    <span> {{todo.content}}</span>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+
+</main>
+
+
+<!-- Affichage si la todoList est vide-->
+<ng-template #otherContent>
+    <div class="otherContent flex column">
+        <p class="vide">Aucune tâche pour le moment <img class="icone-category" src="assets/icons/no-todo-icon.png"
+                alt="icon-category"></p>
+        <app-button routerLink="/add"></app-button>
+    </div>
+</ng-template>

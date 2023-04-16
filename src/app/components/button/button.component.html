@@ -1,12 +1,3 @@
-<main>
 
-    <p>Aucune tâche pour le moment 🙌</p>
-
-
-<button (click)="goToSelectedPage()"  type="submit">
-    {{ text }}
-</button>
-
-</main>
-
-<!-- *ngIf="category && inputText" [disabled]="!(category && inputText)" -->
+<button *ngIf="router.url.endsWith('/home')" type="button">Créer une tâche</button>
+<button *ngIf="router.url.endsWith('add')" type="button">Valider une tâche</button>

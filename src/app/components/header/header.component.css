@@ -1,14 +1,9 @@
-.header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    background:#040722;
-    color:white;
-    height: 70px;
-    width: 100vw;
-    border: 1px solid white;
+header {
+    border-bottom: white solid 2px;
+    
 }
 
-P{
-    margin: 0 0 10px 26px;
+h1{
+    font-size: 20px;
+    margin: 35px 0 10px 26px;
 }
