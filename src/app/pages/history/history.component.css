@@ -1,12 +1,108 @@
-.history{
+main {
+    margin: 37px 0 0 26px;
+    width: 90vw;
+    height: 75vh;
+    overflow-y: scroll;
+
+}
+
+.otherContent {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 75vh;
+
+}
+
+p,
+li {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+img {
+    width: 5vw;
+    display: inline;
+}
+
+.titre {
+    margin-bottom: 32px;
+    padding-left: 35px;
+}
+
+
+
+ul li {
+    list-style: none;
+    margin-bottom: 23px;
+
+}
+
+button {
+    width: 23px;
+    height: 23px;
+    border: white solid 2px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.flex {
     display: flex;
+}
+
+.column {
     flex-direction: column;
-    justify-content: space-between;
-    width: 371px;
-    background: #040722;
+}
+
+.icone-urgent {
+
+    position: absolute;
+    left: 25px;
+}
+.entete {
+    width: 80%;
+    flex-direction: row;
+    position: relative;
+}
+
+.history {
+    width: 248px;
+    height: 48px;
+    border-radius: 30px;
     color: white;
-    height: 74vh;
-    width: 100vw;
-    padding: 10px;
-    gap: 20px;
+    background-color: var(--blue);
+    border: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.category {
+    padding-right: 5px;
+}
+.icone-urgent {
+    margin-right: 50px;
+    position: absolute;
+    left: 0;
+}
+.vide {
+    margin-bottom : 32px;
+}
+
+
+/*Personnalisation de la scrollbar */
+
+/*largeur de la scrollbar */
+main::-webkit-scrollbar {
+    width:5px;
+}
+
+/*background de la scrollbar */
+main::-webkit-scrollbar-track {
+    background-color: var(--dark-blue);
+}
+
+/*couleur et arrondi de la scrollbar */
+main::-webkit-scrollbar-thumb {
+    background-color: var(--yellow);
+    border-radius: 15px;
 }

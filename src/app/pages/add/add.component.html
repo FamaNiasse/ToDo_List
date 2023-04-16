@@ -1,0 +1,72 @@
+<form #formGroup="ngForm" [formGroup]="todoForm">
+
+    <div class="container flex column">
+        <label for="cat" class="titre style">Sélectionner votre catégorie :</label>
+
+
+        <div class="all-cat">
+
+            <div class="flex categoryList">
+                <label class="boxCatContainer" for="cat1">
+                    <input required type="radio" id="cat1" formControlName="cat" name="cat" class="cat" value="🛍️">
+                    <span class="boxcat">🛍️</span>
+                </label>
+            </div>
+
+            <div class="flex categoryList">
+                <label class="boxCatContainer" for="cat2">
+                    <input required type="radio" id="cat2" formControlName="cat" name="cat" class="cat" value="💊️">
+                    <span class="boxcat">💊️</span>
+                </label>
+            </div>
+            <div class="flex categoryList">
+                <label class="boxCatContainer" for="cat3">
+                    <input required type="radio" id="cat3" formControlName="cat" name="cat" class="cat" value="💼">
+                    <span class="boxcat">💼</span>
+                </label>
+            </div>
+            <div class="flex categoryList">
+                <label class="boxCatContainer" for="cat4">
+                    <input required type="radio" id="cat4" formControlName="cat" name="cat" class="cat" value="💸">
+                    <span class="boxcat">💸</span>
+                </label>
+            </div>
+            <div class="flex categoryList">
+                <label class="boxCatContainer" for="cat5">
+                    <input required type="radio" id="cat5" formControlName="cat" name="cat" class="cat" value="🧼">
+                    <span class="boxcat">🧼</span>
+                </label>
+            </div>
+            <div class="flex categoryList">
+                <label class="boxCatContainer" for="cat6">
+                    <input required type="radio" id="cat6" formControlName="cat" name="cat" class="cat" value="🤷‍♀️">
+                    <span class="boxcat">🤷‍♀️</span>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="flex column">
+            <label class="titre style" for="todo">Quelle tâche avez-vous à effectuer ?</label>
+            <input required type="text" id="todo" formControlName="todo" class="tache-a-remplir"
+                placeholder="Exemple: Faire les courses">
+
+            <div class="option flex">
+
+                <label class="boxcontainer style">La tâche est urgente
+                    <input type="checkbox" class="style urgente" formControlName="urgence" name="urgence"
+                        (click)="urgence()">
+                    <span class="box"></span>
+
+                    <img src="assets/icons/urgent-icon.png" alt="icon_urgent" width="20px">
+                </label>
+
+            </div>
+
+            <button [disabled]="formGroup.invalid" class="valider" type="submit" (click)="addTodo()">Valider ma
+                tâche</button>
+
+        </div>
+    </div>
+
+</form>

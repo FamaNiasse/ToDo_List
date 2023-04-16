@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TodosService } from './services/todos.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todo_list';
+  title = 'TODO';
+
+
+  constructor (
+    public todosService : TodosService
+  ){}
+  ngOnInit() {
+    this.todosService.getTodoList();
+  }
 }

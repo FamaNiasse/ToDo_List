@@ -1,27 +1,33 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
+import { AddComponent } from './pages/add/add.component';
 import { HistoryComponent } from './pages/history/history.component';
-import { SelectedPageComponent } from './pages/selected-page/selected-page.component';
-
+import { HomeComponent } from './pages/home/home.component';
+import { TodoCardComponent } from './components/todo-card/todo-card.component';
 
 const routes: Routes = [
   {
-    path:"",
+    path: '',
+    redirectTo: 'home',
+    pathMatch: "full"
+  },
+  {
+    path:'home',
     component: HomeComponent
   },
-
   {
-    path:"selected",
-    component: SelectedPageComponent
+    path: "add",
+    component: AddComponent
   },
-
   {
-    path:"history",
+    path: "add/:id",
+    component: TodoCardComponent
+  },
+  {
+    path: "history",
     component: HistoryComponent
   },
-
-]
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

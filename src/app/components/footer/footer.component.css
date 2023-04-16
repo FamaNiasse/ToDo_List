@@ -1,9 +1,50 @@
-.footer {
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    border-top: white 1px solid;
+}
+
+footer button {
+    margin: 17px 0;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    width: 65.86px;
+    height: 65.86px;
+    border : none;
+}
+
+footer button svg {
+    width: 45%;
+    background-color: var(--dark-blue);
+}
+
+footer .burger {
+    margin-left: 57px;
+}
+
+footer .history {
+    margin-right: 71.41px;
+}
+
+
+
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:#040722;
-    height: 100px;
-    width: 100vw;
-    border: 1px solid white;
+}
+.bg-green {
+    background-color: var(--green)!important;
+}
+.bg-yellow {
+    background-color: var(--yellow)!important;
+}
+.bg-pink {
+    background-color: var(--pink)!important;
+}
+.active-button{
+    background-color: var(--pink);
 }

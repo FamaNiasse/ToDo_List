@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-button',
@@ -8,13 +8,7 @@ import { Router } from '@angular/router';
 })
 export class ButtonComponent {
 
-  @Input() text: string = '';
+  constructor (public router: Router){}
 
-  constructor(private router: Router) {}
-
-  goToSelectedPage() {
-    this.router.navigate(['/selected']);
-    
-  }
-
+  
 }
